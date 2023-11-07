@@ -1,0 +1,79 @@
+@use 'colors' as clr;
+
+.sideBar {
+  max-width: 16rem;
+  height: 100dvh;
+  border-right: 1px solid clr.$main;
+  padding-block: 1rem;
+
+  .logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: clr.$main;
+    text-align: center;
+  }
+
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+
+    .image {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid clr.$main;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .labels {
+      .name {
+        font-size: 1.5;
+        font-weight: 600;
+      }
+  
+      .label {
+        font-size: 1rem;
+        font-weight: 500;
+        opacity: .8;
+      }
+    }
+  }
+
+  .separationLine {
+    border: none;
+    border-top: 1px solid clr.$main;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-decoration: none;
+      
+      .icon {
+        width: 1.5rem;
+        height: auto;
+      }
+    }
+  }
+}

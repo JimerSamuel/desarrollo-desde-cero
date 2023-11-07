@@ -1,0 +1,22 @@
+@use 'colors' as clr;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: clr.$text;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  height: 100dvh;
+  background-color: clr.$background;
+
+  .mainContainer {
+    max-width: 1120px;
+    margin: auto;
+  }
+}
